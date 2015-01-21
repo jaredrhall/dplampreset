@@ -56,12 +56,13 @@ Public Class MainForm
         If Check_lamp1.Checked Then lamp1 = "YES" Else lamp1 = "NO"
         If Check_lamp2.Checked Then lamp2 = "YES" Else lamp2 = "NO"
 
-        str = "You have selected the following options:" & vbCr
-        str = str & vbTab & "Serial Port:" & vbTab & selectedCom & vbCr
-        str = str & vbTab & "Reset Lamp 1:" & vbTab & lamp1 & vbCr
-        str = str & vbTab & "Reset Lamp 2:" & vbTab & lamp2 & vbCr
-        str = str & vbCr
-        str = str & "YOU ARE ABOUT TO RESET THE LISTED LAMP HOUR METERS." & vbCr
+        str = "You have selected the following options:" & vbCr & vbLf
+        str = str & vbCr & vbLf
+        str = str & vbTab & "Serial Port:" & vbTab & selectedCom & vbCr & vbLf
+        str = str & vbTab & "Reset Lamp 1:" & vbTab & lamp1 & vbCr & vbLf
+        str = str & vbTab & "Reset Lamp 2:" & vbTab & lamp2 & vbCr & vbLf
+        str = str & vbCr & vbLf
+        str = str & "YOU ARE ABOUT TO RESET THE LISTED LAMP HOUR METERS." & vbCr & vbLf
         str = str & "PRESS OK TO CONTINUE, OR CANCEL TO ABORT."
 
         Return str
